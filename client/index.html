@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="ranty" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="ranty" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="ranty" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="ranty" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- TODO -->
+    <title>Zana Şimşek</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- build:css({.tmp,client}) styles/main.css -->
+    <link rel="stylesheet" href="app/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/lib/animate.css/animate.min.css">
+    <link rel="stylesheet" href="app/lib/normalize.css/normalize.css">
+    <link rel="stylesheet" href="app/lib/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="app/lib/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="ext-libs/css/transition-animations.css">
+    <link rel="stylesheet" href="ext-libs/css/template.css">
+    <link rel="stylesheet" href="app/app.css">
+    <!-- endbuild -->
+</head>
+<body class="material-template">
+<!-- Loading animation -->
+<div class="preloader">
+    <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+    </div>
+</div>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="page" class="page"
+     data-ng-app="ranty"
+     page-switcher>
+    <!-- Header -->
+    <header id="site_header" class="header mobile-menu-hide">
+        <div class="header-content">
+            <div class="site-title-block mobile-hidden">
+                <div class="site-title">Zana <span>Şimşek</span></div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="site-nav">
+                <!-- Main menu -->
+                <ul id="nav" class="site-main-menu">
+                    <li>
+                        <a class="pt-trigger" ng-href="#!/home" data-animation="61">Home</a>
+                        <!-- href value = data-id without # of .pt-page. -->
+                    </li>
+                    <li>
+                        <a class="pt-trigger" ng-href="#!/resume">Resume</a>
+                    </li>
+                    <li>
+                        <a class="pt-trigger" ng-href="#!/services">Services</a>
+                    </li>
+                    <li>
+                        <a class="pt-trigger" ng-href="#!/portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="pt-trigger" ng-href="#!/blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="pt-trigger" ng-href="#!/contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- /Main menu -->
+            </div>
+            <!-- Navigation -->
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Mobile Header -->
+    <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+            <div class="mobile-site-title">Zana Şimşek</div>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- /Mobile Header -->
+
+    <!-- Main Content -->
+    <div id="main" class="site-main"
+         ng-view>
+    </div>
+    <!-- /Main Content -->
+</div>
+<footer>
+    <div class="copyrights">© 2017 All rights reserved. Material template by LMPixels</div>
+</footer>
+
+<!-- build:js scripts/vendor.js -->
+<script src="app/lib/jquery/dist/jquery.min.js"></script>
+<script src="ext-libs/js/modernizr.custom.js"></script>
+<script src="ext-libs/js/jquery.hoverdir.js"></script>
+<script src="ext-libs/js/template.js"></script>
+<script src="app/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="app/lib/bootstrap-validator/dist/validator.min.js"></script>
+<script src="app/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="app/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="app/lib/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="app/lib/masonry-layout/dist/masonry.pkgd.min.js"></script>
+<script src="app/lib/shufflejs/dist/jquery.shuffle.min.js"></script>
+<script src="app/lib/angular/angular.js"></script>
+<script src="app/lib/angular-route/angular-route.js"></script>
+<script src="app/app.js"></script>
+
+<script src="app/directive/directive.module.js"></script>
+<script src="app/directive/page-switcher.js"></script>
+
+<script src="app/lib/templates.js"></script>
+<script src="app/pages/blog/blog.js"></script>
+<script src="app/pages/blog/post/post.js"></script>
+<script src="app/pages/contact/contact.js"></script>
+<script src="app/pages/home/home.js"></script>
+<script src="app/pages/portfolio/portfolio.js"></script>
+<script src="app/pages/resume/resume.js"></script>
+<script src="app/pages/services/services.js"></script>
+<!-- endbuild -->
+</body>
+</html>

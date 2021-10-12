@@ -1,1 +1,1 @@
-# zanasimsek.com-ui
+# ranty
