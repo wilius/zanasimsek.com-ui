@@ -1,0 +1,66 @@
+<div class="pt-wrapper">
+    <!-- Subpages -->
+    <div class="subpages">
+        <section class="pt-page" data-id="about-me">
+            <div class="section-inner start-page-content">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <div class="photo">
+                                <img ng-src="{{::content.image }}" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                            <div class="title-block">
+                                <h1>{{:: content.name }}</h1>
+                                <div class="owl-carousel text-rotation"
+                                     title-owl-carousel>
+                                    <div class="item" ng-repeat="title in content.titles">
+                                        <div class="sp-subtitle">{{:: title }}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-links">
+                                <a ng-repeat="socialLink in content.socialLinks"
+                                   target="_blank"
+                                   ng-href="{{socialLink.href}}"
+                                   title="{{socialLink.title}}">
+                                    <i class="fab" ng-class="socialLink.iconClass"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-content">
+                    <div class="row">
+
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="about-me">
+                                <div class="block-title">
+                                    <h3>About <span>Me</span></h3>
+                                </div>
+                                <div ng-bind-html="content.aboutMe"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <ul class="info-list">
+                                <li><span class="title">Age</span><span class="value">{{:: content.age }}</span></li>
+                                <li><span class="title">Residence</span><span class="value">{{:: content.residence
+                                    }}</span></li>
+                                <li><span class="title">Address</span><span
+                                        class="value">{{:: content.address }}</span></li>
+                                <li><span class="title">E-mail</span><span class="value"><a
+                                        href="mailto:email@example.com">{{:: content.email }}</a></span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

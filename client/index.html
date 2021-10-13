@@ -18,6 +18,7 @@
     <!-- build:css({.tmp,client}) styles/main.css -->
     <link rel="stylesheet" href="app/lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/lib/animate.css/animate.min.css">
+    <link rel="stylesheet" href="app/lib/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="app/lib/normalize.css/normalize.css">
     <link rel="stylesheet" href="app/lib/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="app/lib/magnific-popup/dist/magnific-popup.css">
@@ -55,23 +56,14 @@
                 <!-- Main menu -->
                 <ul id="nav" class="site-main-menu">
                     <li>
-                        <a class="pt-trigger" ng-href="#!/home" data-animation="61">Home</a>
+                        <a class="pt-trigger" ng-href="#!/home">Home</a>
                         <!-- href value = data-id without # of .pt-page. -->
-                    </li>
-                    <li>
-                        <a class="pt-trigger" ng-href="#!/resume">Resume</a>
-                    </li>
-                    <li>
-                        <a class="pt-trigger" ng-href="#!/services">Services</a>
-                    </li>
-                    <li>
-                        <a class="pt-trigger" ng-href="#!/portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a class="pt-trigger" ng-href="#!/blog">Blog</a>
                     </li>
                     <li>
-                        <a class="pt-trigger" ng-href="#!/contact">Contact</a>
+                        <a class="pt-trigger" ng-href="#!/about-me" data-animation="61">About</a>
                     </li>
                 </ul>
                 <!-- /Main menu -->
@@ -88,7 +80,7 @@
         </div>
 
         <a class="menu-toggle mobile-visible">
-            <i class="fa fa-bars"></i>
+            <i class="fab fa-bars"></i>
         </a>
     </div>
     <!-- /Mobile Header -->
@@ -105,6 +97,7 @@
 
 <!-- build:js scripts/vendor.js -->
 <script src="app/lib/jquery/dist/jquery.min.js"></script>
+<script src="app/lib/@fortawesome/fontawesome-free/js/all.js"></script>
 <script src="ext-libs/js/modernizr.custom.js"></script>
 <script src="ext-libs/js/jquery.hoverdir.js"></script>
 <script src="ext-libs/js/template.js"></script>
@@ -115,21 +108,20 @@
 <script src="app/lib/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 <script src="app/lib/masonry-layout/dist/masonry.pkgd.min.js"></script>
 <script src="app/lib/shufflejs/dist/jquery.shuffle.min.js"></script>
-<script src="app/lib/angular/angular.js"></script>
+<script src="app/lib/angular/angular.min.js"></script>
+<script src="app/lib/angular-sanitize/angular-sanitize.min.js"></script>
 <script src="app/lib/angular-route/angular-route.js"></script>
 <script src="app/app.js"></script>
 
 <script src="app/directive/directive.module.js"></script>
 <script src="app/directive/page-switcher.js"></script>
+<script src="app/directive/title-owl-carousel.js"></script>
 
 <script src="app/lib/templates.js"></script>
 <script src="app/pages/blog/blog.js"></script>
 <script src="app/pages/blog/post/post.js"></script>
-<script src="app/pages/contact/contact.js"></script>
 <script src="app/pages/home/home.js"></script>
-<script src="app/pages/portfolio/portfolio.js"></script>
-<script src="app/pages/resume/resume.js"></script>
-<script src="app/pages/services/services.js"></script>
+<script src="app/pages/about-me/about-me.js"></script>
 <!-- endbuild -->
 </body>
 </html>

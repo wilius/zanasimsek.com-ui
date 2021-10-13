@@ -135,17 +135,11 @@ gulp.task('optimize', ['inject', 'sass-min'], function () {
             gulpUtil.log(gulpUtil.colors.red('[Error]'), err);
             this.emit('end');
             throw err;
-        })))*/
-        .pipe(gulp.dest(config.dist))
-        .src('client/app/pages/**/*.html')
-        .pipe(templateCache("templates.js", {
-            module: "ranty.templates"
-        }))
-        .pipe(gulp.dest('client/app/lib'));
+        })))*/;
 });
 
 gulp.task('templates', function () {
-    log('Optimizing the js, css, html');
+    log('Optimizing templates');
 
     return gulp
         .src('client/app/pages/**/*.html')
@@ -240,6 +234,8 @@ function startBrowserSync(opt) {
 
     function serveApp() {
         gulp.watch([config.sass], ['sass']);
+        gulp.watch(['client/app/pages/**/*.html'], ['templates']);
+        gulp.watch(['client/**/*.css']);
 
         options.server = {
             baseDir: [

@@ -3,15 +3,13 @@
 // Declare app level module which depends on views, and core components
 angular.module('ranty', [
     'ngRoute',
+    'ngSanitize',
     'ranty.directive',
     'ranty.templates',
+    'ranty.home',
     'ranty.blog',
     'ranty.blog.post',
-    'ranty.contact',
-    'ranty.home',
-    'ranty.portfolio',
-    'ranty.resume',
-    'ranty.services'
+    'ranty.about-me'
 ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
 

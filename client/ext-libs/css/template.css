@@ -3,8 +3,6 @@
 /* =============================================================================
 1. Fonts
 ============================================================================= */
-/* Font Awesome icons font */
-@import url('font-awesome.css'); /* Full icons list: http://fontawesome.io/icons/ */
 
 /* Material Design Iconic Font */
 @import url('material-design-iconic-font.css'); /* Full icons list: http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.htmls */
@@ -873,18 +871,21 @@ body > footer .copyrights {
     height: 36px;
     border-radius: 24px;
     background-color: #fff;
-    margin: 0 1px;
+    margin: 0 5px;
     color: #9e9e9e;
     text-align: center;
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.1);
+    transition: all .1s ease-in;
 }
 
 .start-page-content .social-links a:hover {
     -webkit-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.2);
+    background-color: #9e9e9e;
+    color: #fff;
 }
 
 .start-page-content .social-links a i {
@@ -2008,7 +2009,7 @@ body > footer .copyrights {
     margin : 0 0 10px;
 }
 
-.project-general-info .fa {
+.project-general-info .fab {
     color: #2eca7f;
     margin-right: 5px;
 }
@@ -2526,4 +2527,8 @@ blockquote footer, blockquote small, blockquote .small {
     .home-page-description {
         font-size: 16px;
     }
+}
+
+.start-page-content .social-links a svg {
+    height: 36px;
 }
