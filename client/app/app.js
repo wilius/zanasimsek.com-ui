@@ -9,6 +9,7 @@ angular.module('ranty', [
     'ranty.home',
     'ranty.blog',
     'ranty.blog.post',
+    'ranty.blog.author',
     'ranty.about-me'
 ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
@@ -16,4 +17,7 @@ angular.module('ranty', [
     $routeProvider.otherwise({
         redirectTo: '/home'
     });
+
+}]).run(['$rootScope', function ($rootScope) {
+    $rootScope.year = new Date().getFullYear();
 }]);

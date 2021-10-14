@@ -17,10 +17,18 @@ angular.module('ranty.about-me', ['ngRoute'])
             residence: "TR",
             address: "Istanbul, TR",
             email: "info@zanasimsek.com",
-            aboutMe: "<p>Hey! I’m Zana Şimşek. I'm working for " +
-                "<a href='https://www.openpayd.com/uk' target='_blank'><img class='openpayd-logo' src='images/about-me/OpenPayd_Logo.svg'></a> as a Software Architect. </p>" +
+            aboutMe: "" +
+                "<p>" +
+                "Hey! I’m Zana Şimşek. I'm working for " +
+                "<a href='https://www.openpayd.com/uk' " +
+                "   target='_blank'>" +
+                "   <img class='working-for-logo' " +
+                "        src='images/about-me/OpenPayd_Logo.svg'" +
+                "        alt='Openpayd'>" +
+                "</a>" +
+                " as a Software Architect. </p>" +
                 "<p></p>" +
-                "<p>Feel free to contact with me about my posts by a blog comment or by email.</p>",
+                "<p>Feel free to contact me about my posts by a blog comment or by an email.</p>",
             socialLinks: [
                 {
                     iconClass: "fa-twitter",
